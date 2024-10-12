@@ -52,4 +52,8 @@ async def stk(ctx):
     a = random.randint(0,30)
     await ctx.send(cevreci_kuruluslar[a])
 
+@bot.command()
+async def help(ctx):
+    await ctx.send("$stk komutunu yazarsan sana herhangi bir doğa koruma amacına sahip sivil toplum kuruluşu söylerim!")
+
 bot.run("TOKEN")
